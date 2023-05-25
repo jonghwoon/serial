@@ -5,15 +5,15 @@ include "./db.php";
 <?php
                             
                 $id = $_POST['id'];                     //id
-                $serial = $_POST['serial'];             //serial
-                $name = $_POST['name'];                 //이름
-                $phone = $_POST['phone'];               //전화
-                $address = $_POST['address'];           //주소
-                $email = $_POST['email'];               //메일
-                $ju_serial = $_POST['ju_serial'];       //주열기 시리얼
-                $branch = $_POST['branch'];             //지점
-                $attatch = $_POST['attatch'];           //소속
-                $remark = $_POST['remark'];             //비고란
+                $serial = $_POST['serial'];             //タブレットシリアル
+                $name = $_POST['name'];                 //名前
+                $phone = $_POST['phone'];               //電話番号
+                $address = $_POST['address'];           //住所
+                $email = $_POST['email'];               //メール
+                $ju_serial = $_POST['ju_serial'];       //熱機器シリアル
+                $branch = $_POST['branch'];             //支店
+                $attatch = $_POST['attatch'];           //所属
+                $remark = $_POST['remark'];             //備考
                 
                 $URL = $_POST['link'];                  //return URL
  
@@ -45,7 +45,7 @@ include "./db.php";
                 if($result){
                     
 ?>                  <script>
-                        alert("<?php echo "정보가 수정 되었습니다."?>");
+                        alert("<?php echo "정보가 수정 되었습니다."?>"); //情報が修正されました。
                         location.replace("<?php echo $URL?>");
                     </script>
 <?php

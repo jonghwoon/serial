@@ -4,7 +4,7 @@
   
       } else { ?>
         <script>
-          alert("로그인 해 주세요.");
+          alert("로그인 해 주세요."); //ログインしてください。
           location.replace("./")
         </script>
         <br />

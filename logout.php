@@ -6,7 +6,7 @@
         if($result) {
 ?>
         <script>
-                alert("로그아웃 되었습니다.");
+                alert("로그아웃 되었습니다."); //ログアウトしました。
                 location.replace("./")
         </script>
 <?php   }

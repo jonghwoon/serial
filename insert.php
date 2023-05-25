@@ -1,9 +1,9 @@
 <?php include './db.php';
-
+//データー入力
 if(!empty($_POST)) {
     $msg = '';
     $output = '';
-    $connect = mysqli_connect("localhost", "say2them", "Say2Them##", "dise");
+    $connect = mysqli_connect("host", "id", "password", "driver");
 
     $id = mysqli_real_escape_string($connect, $_POST["id"]);
     $serial = mysqli_real_escape_string($connect, $_POST["serial"]);
@@ -36,7 +36,7 @@ if(!empty($_POST)) {
         attatch = '$attatch',
         remark = '$remark'";
 
-        $msg = '정상적으로 처리 되었습니다.';
+        $msg = '정상적으로 처리 되었습니다.'; //正常に処理されました。
     }
 
     if(mysqli_query($connect, $query)) {
@@ -54,8 +54,8 @@ if(!empty($_POST)) {
         $output .='
             <table class="table table-bordered">
                 <tr>
-                    <th width="30%">이름</th>
-                    <th width="70%">보기</th>
+                    <th width="30%">이름/名前</th>
+                    <th width="70%">보기/詳細</th>
                 </tr>';
 
                 while($row=mysqli_fetch_array($result)){

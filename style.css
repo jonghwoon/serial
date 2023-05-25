@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 전체 옵션 */
+/* 全体 */
 * {
 	margin: 0 auto;
 	padding: 0;
@@ -14,7 +14,7 @@ ul li {
 	list-style:none;
 }
 
-/* 공통 */
+/* 共通 */
 .fl {
 	float:left;
 }
@@ -22,7 +22,7 @@ ul li {
 	text-align:center;
 }
 
-/* 게시판 목록 */
+/* 目録 */
 #board_area {
 	width: 900px;
 	position: relative;

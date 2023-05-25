@@ -1,8 +1,8 @@
 <?php
 	session_start();
-	header('Content-Type: text/html; charset=utf-8'); // utf-8?�코??
+	header('Content-Type: text/html; charset=utf-8'); // utf-8設定
 
-	$db = new mysqli("localhost","say2them","Say2Them##","dise");
+	$db = new mysqli("host","id","password","driver");
 	$db->set_charset("utf8");
     
 	function mq($sql)

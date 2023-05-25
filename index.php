@@ -7,12 +7,12 @@
 <head>
     <meta charset='utf-8'>
 </head>
-
+<!-- メイン画面 -->
 <body>
     <div class="container"  style="width: 400px; center;">
         <div class="login-form">
             <form action="login_action.php" method="post">
-                <h2 class="text-center">로그인</h2>
+                <h2 class="text-center">ログイン</h2>
                 <div class="form-group">
                     <input type="text" name="id" class="form-control" placeholder="Username" required="required">
                 </div>
@@ -20,7 +20,7 @@
                     <input type="password" name="pw" class="form-control" placeholder="Password" required="required">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">로그인</button>
+                    <button type="submit" class="btn btn-primary btn-block">ログイン</button>
                 </div>
             </form>
         </div>
